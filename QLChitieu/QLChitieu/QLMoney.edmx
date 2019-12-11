@@ -22,6 +22,7 @@
           </Key>
           <Property Name="taiKhoan" Type="varchar" MaxLength="20" Nullable="false" />
           <Property Name="matKhau" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Moctien" Type="float" />
         </EntityType>
         <EntityType Name="ThuVao">
           <Key>
@@ -107,6 +108,7 @@
           <Property Name="matKhau" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="ChiRas" Relationship="DataManagerMoneyModel.FK_ChiRa_ToTable" FromRole="TaiKhoan" ToRole="ChiRa" />
           <NavigationProperty Name="ThuVaos" Relationship="DataManagerMoneyModel.FK_ThuVao_ToTable" FromRole="TaiKhoan" ToRole="ThuVao" />
+          <Property Name="Moctien" Type="Double" />
         </EntityType>
         <EntityType Name="ThuVao">
           <Key>
@@ -164,6 +166,7 @@
           <EntitySetMapping Name="TaiKhoans">
             <EntityTypeMapping TypeName="DataManagerMoneyModel.TaiKhoan">
               <MappingFragment StoreEntitySet="TaiKhoan">
+                <ScalarProperty Name="Moctien" ColumnName="Moctien" />
                 <ScalarProperty Name="matKhau" ColumnName="matKhau" />
                 <ScalarProperty Name="taiKhoan1" ColumnName="taiKhoan" />
               </MappingFragment>

@@ -76,6 +76,54 @@ namespace QLChitieu
             db.SaveChanges();
             db.Dispose();
         }
+        public void SetMoctien( double moctien, string taikhoan)
+        {
+            DataManagerMoneyEntities db = new DataManagerMoneyEntities();
+            db.TaiKhoans.Find(taikhoan).Moctien = moctien;
+            db.SaveChanges();
+        }
+        public double GetMocTien(string taikhoan)
+        {
+            DataManagerMoneyEntities db = new DataManagerMoneyEntities();
+            return db.TaiKhoans.Find(taikhoan).Moctien.Value;
+
+        }
+        public void EditMoctien( double moctien , string taikhoan)
+        {
+            DataManagerMoneyEntities db = new DataManagerMoneyEntities();
+            TaiKhoan t = db.TaiKhoans.Find(taikhoan);
+            t.Moctien = moctien;
+            db.SaveChanges();
+        }
+        public void Editthu( string tenthu, double gia, DateTime time)
+        {
+            ThuVao temp = new ThuVao();
+            
+            temp.TenThuVao = tenthu;
+            temp.GiaTien = gia;
+            temp.Time = time;
+
+            DataManagerMoneyEntities db = new DataManagerMoneyEntities();
+            db.ThuVaos.Add(temp);
+            db.SaveChanges();
+            db.Dispose();
+        }
+        public void EditChi( string tenchi, double gia, int soluong, DateTime time)
+        {
+            ChiRa temp = new ChiRa();
+            
+            temp.TenChi = tenchi;
+            temp.soluong = soluong;
+            temp.GiaTien = gia * soluong;
+            temp.Time = time;
+
+            DataManagerMoneyEntities db = new DataManagerMoneyEntities();
+            db.ChiRas.Add(temp);
+            db.SaveChanges();
+            db.Dispose();
+        }
+
+       
 
         public double GetTongTienChi()
         {

@@ -22,6 +22,7 @@ namespace QLChitieu
     
         public string taiKhoan1 { get; set; }
         public string matKhau { get; set; }
+        public Nullable<double> Moctien { get; set; }
     
         public virtual ICollection<ChiRa> ChiRas { get; set; }
         public virtual ICollection<ThuVao> ThuVaos { get; set; }

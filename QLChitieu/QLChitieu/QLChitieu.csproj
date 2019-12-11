@@ -78,6 +78,18 @@
       <DependentUpon>DangkiForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseManager.cs" />
+    <Compile Include="DoubleClickThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoubleClickThu.Designer.cs">
+      <DependentUpon>DoubleClickThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoublleClick.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoublleClick.Designer.cs">
+      <DependentUpon>DoublleClick.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +127,12 @@
     </Compile>
     <EmbeddedResource Include="DangkiForm.resx">
       <DependentUpon>DangkiForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoubleClickThu.resx">
+      <DependentUpon>DoubleClickThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoublleClick.resx">
+      <DependentUpon>DoublleClick.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

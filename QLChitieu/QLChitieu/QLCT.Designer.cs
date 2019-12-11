@@ -167,6 +167,7 @@
             this.grdThuvao.Location = new System.Drawing.Point(150, 458);
             this.grdThuvao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grdThuvao.Name = "grdThuvao";
+            this.grdThuvao.RowHeadersVisible = false;
             this.grdThuvao.RowHeadersWidth = 51;
             this.grdThuvao.RowTemplate.Height = 24;
             this.grdThuvao.Size = new System.Drawing.Size(797, 90);
@@ -178,6 +179,7 @@
             this.grdChi.Location = new System.Drawing.Point(150, 318);
             this.grdChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grdChi.Name = "grdChi";
+            this.grdChi.RowHeadersVisible = false;
             this.grdChi.RowHeadersWidth = 51;
             this.grdChi.RowTemplate.Height = 24;
             this.grdChi.Size = new System.Drawing.Size(797, 94);

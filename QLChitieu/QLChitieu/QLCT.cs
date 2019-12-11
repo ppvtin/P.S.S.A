@@ -16,6 +16,8 @@ namespace QLChitieu
         public QLCT(string taiKhoan)
         {
             InitializeComponent();
+            this.grdThuvao.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            this.grdChi.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             this.Load += QLCT_Load;
             txtTaiKhoan.Text = taiKhoan;
             business = new DatabaseManager();
@@ -23,6 +25,41 @@ namespace QLChitieu
             btnSavethu.Click += btnSavethu_Click;
             btnDeleteChi.Click += btnDeleteChi_Click;
             btnDeleteThu.Click += btnDeleteThu_Click;
+            btnSaveMocTien.Click += btnSaveMocTien_Click;
+            grdChi.DoubleClick += grdChi_DoubleClick;
+            grdThuvao.DoubleClick += grdThuvao_DoubleClick;
+        }
+
+        void grdThuvao_DoubleClick(object sender, EventArgs e)
+        {
+            DoubleClickThu dbclick = new DoubleClickThu();
+            string ten = this.grdThuvao.SelectedRows[0].Cells[2].Value.ToString();
+            double giatien = double.Parse(this.grdThuvao.SelectedRows[0].Cells[3].Value.ToString());
+            DateTime thoigian = DateTime.Parse(this.grdThuvao.SelectedRows[0].Cells[5].Value.ToString());
+            dbclick.ShowDialog();
+        }
+
+        void grdChi_DoubleClick(object sender, EventArgs e)
+        {
+            DoubleClickThu dbclick = new DoubleClickThu();
+            string ten = this.grdChi.SelectedRows[0].Cells[2].Value.ToString();
+            double giatien = double.Parse(this.grdChi.SelectedRows[0].Cells[3].Value.ToString());
+            int soluong = int.Parse(this.grdChi.SelectedRows[0].Cells[4].Value.ToString());
+            DateTime thoigian = DateTime.Parse(this.grdChi.SelectedRows[0].Cells[5].Value.ToString());
+            dbclick.ShowDialog();
+        }
+
+        void btnSaveMocTien_Click(object sender, EventArgs e)
+        {
+            string taikhoan = txtTaiKhoan.Text;
+            double Moctien = double.Parse(txtMocTien.Text);
+            business.SetMoctien(Moctien , taikhoan);
+            // luu y
+            business.EditMoctien(Moctien, taikhoan);
+      
+            this.OnLoad(null);
+            MessageBox.Show("Đã thay đổi mốc tiền của TK : "+ taikhoan + " thành " + business.GetMocTien(taikhoan));
+
         }
 
         void btnDeleteThu_Click(object sender, EventArgs e)
@@ -58,9 +95,9 @@ namespace QLChitieu
             DateTime t = DateTime.Parse(ngaythangChi.Text);
             business.SetChiRa(taikhoan, tenChi, gia, soluong, t);
             this.OnLoad(null);
-            if (business.GetTongTienThu() - business.GetTongTienChi() < 5000000)
+            if (business.GetTongTienThu() - business.GetTongTienChi() < business.GetMocTien(taikhoan))
             {
-                MessageBox.Show("Hiện tiền hiện có của bạn đang dưới 5000000 VND");
+                MessageBox.Show("Hiện tiền hiện có của bạn đang dưới VND" + business.GetMocTien(taikhoan));
             }
 
         }
