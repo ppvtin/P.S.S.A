@@ -16,25 +16,28 @@ namespace QLChitieu
         public QLCT(string taiKhoan)
         {
             InitializeComponent();
+            this.Load += QLCT_Load;
             txtTaiKhoan.Text = taiKhoan;
             business = new DatabaseManager();
             btnSaveChi.Click += btnSaveChi_Click;
             btnSavethu.Click += btnSavethu_Click;
-            btnDelete.Click += BtnDelete_Click;
-            Delete.Click += Delete_Click;
+            btnDeleteChi.Click += btnDeleteChi_Click;
+            btnDeleteThu.Click += btnDeleteThu_Click;
         }
 
-        private void Delete_Click(object sender, EventArgs e)
+        void btnDeleteThu_Click(object sender, EventArgs e)
         {
             business.deleteThu(int.Parse(grdThuvao.SelectedRows[0].Cells[0].Value.ToString()));
             this.OnLoad(null);
         }
 
-        private void BtnDelete_Click(object sender, EventArgs e)
+        void btnDeleteChi_Click(object sender, EventArgs e)
         {
-            business.deleteChi(int.Parse(grdThuvao.SelectedRows[0].Cells[0].Value.ToString()));
+            business.deleteChi(int.Parse(grdChi.SelectedRows[0].Cells[0].Value.ToString()));
             this.OnLoad(null);
         }
+
+       
 
         void btnSavethu_Click(object sender, EventArgs e)
         {
@@ -70,7 +73,7 @@ namespace QLChitieu
             grdThuvao.Columns["TaiKhoan"].Visible = false;
             txtTongChi.Text = business.GetTongTienChi().ToString();
             txtTongThu.Text = business.GetTongTienThu().ToString();
-            // txtTienDu.Text = 
+            
         }
 
 

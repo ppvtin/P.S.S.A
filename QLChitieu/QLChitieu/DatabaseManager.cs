@@ -55,7 +55,7 @@ namespace QLChitieu
             temp.TenTK = taikhoan;
             temp.TenChi = tenchi;
             temp.soluong = soluong;
-            temp.GiaTien = gia;
+            temp.GiaTien = gia * soluong;
             temp.Time = time;
 
             DataManagerMoneyEntities db = new DataManagerMoneyEntities();
@@ -70,6 +70,7 @@ namespace QLChitieu
             temp.TenThuVao = tenthu;
             temp.GiaTien = gia;
             temp.Time = time;
+
             DataManagerMoneyEntities db = new DataManagerMoneyEntities();
             db.ThuVaos.Add(temp);
             db.SaveChanges();
@@ -79,12 +80,28 @@ namespace QLChitieu
         public double GetTongTienChi()
         {
             DataManagerMoneyEntities db = new DataManagerMoneyEntities();
-            return db.ChiRas.Select(item => item.GiaTien).Sum();
+            var temp = db.ChiRas.Select(item => item.GiaTien);
+            if (temp == null || temp.Count() == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return temp.Sum();
+            }
         }
         public double GetTongTienThu()
         {
             DataManagerMoneyEntities db = new DataManagerMoneyEntities();
-            return db.ThuVaos.Select(item => item.GiaTien).Sum();
+            var temp = db.ThuVaos.Select(item => item.GiaTien);
+            if (temp == null || temp.Count() == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                return temp.Sum();
+            }
         }
         public void deleteThu(int Ma)
         {

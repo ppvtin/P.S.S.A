@@ -31,8 +31,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btnSaveMocTien = new System.Windows.Forms.Button();
             this.txtMocTien = new System.Windows.Forms.TextBox();
-            this.Delete = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnDeleteThu = new System.Windows.Forms.Button();
+            this.btnDeleteChi = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lbeSoluong = new System.Windows.Forms.Label();
@@ -90,25 +90,25 @@
             this.txtMocTien.Size = new System.Drawing.Size(100, 22);
             this.txtMocTien.TabIndex = 66;
             // 
-            // Delete
+            // btnDeleteThu
             // 
-            this.Delete.Location = new System.Drawing.Point(987, 426);
-            this.Delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Delete.Name = "Delete";
-            this.Delete.Size = new System.Drawing.Size(75, 23);
-            this.Delete.TabIndex = 65;
-            this.Delete.Text = "Delete";
-            this.Delete.UseVisualStyleBackColor = true;
+            this.btnDeleteThu.Location = new System.Drawing.Point(987, 426);
+            this.btnDeleteThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDeleteThu.Name = "btnDeleteThu";
+            this.btnDeleteThu.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteThu.TabIndex = 65;
+            this.btnDeleteThu.Text = "Delete";
+            this.btnDeleteThu.UseVisualStyleBackColor = true;
             // 
-            // btnDelete
+            // btnDeleteChi
             // 
-            this.btnDelete.Location = new System.Drawing.Point(987, 297);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
-            this.btnDelete.TabIndex = 64;
-            this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDeleteChi.Location = new System.Drawing.Point(987, 297);
+            this.btnDeleteChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDeleteChi.Name = "btnDeleteChi";
+            this.btnDeleteChi.Size = new System.Drawing.Size(75, 23);
+            this.btnDeleteChi.TabIndex = 64;
+            this.btnDeleteChi.Text = "Delete";
+            this.btnDeleteChi.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -329,7 +329,7 @@
             this.label4.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(91, 108);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 21);
+            this.label4.Size = new System.Drawing.Size(64, 21);
             this.label4.TabIndex = 39;
             this.label4.Text = "Chi ra";
             // 
@@ -351,8 +351,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSaveMocTien);
             this.Controls.Add(this.txtMocTien);
-            this.Controls.Add(this.Delete);
-            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnDeleteThu);
+            this.Controls.Add(this.btnDeleteChi);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbeSoluong);
@@ -393,8 +393,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSaveMocTien;
         private System.Windows.Forms.TextBox txtMocTien;
-        private System.Windows.Forms.Button Delete;
-        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnDeleteThu;
+        private System.Windows.Forms.Button btnDeleteChi;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbeSoluong;
