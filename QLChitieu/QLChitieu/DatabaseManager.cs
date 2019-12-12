@@ -38,7 +38,7 @@ namespace QLChitieu
             db.Dispose();
         }
 
-        public ChiRa[] GetChiRa()
+        public ChiRa[] GetChiRa() 
         {
             DataManagerMoneyEntities db = new DataManagerMoneyEntities();
             return db.ChiRas.ToArray();
