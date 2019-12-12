@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLCT));
             this.label3 = new System.Windows.Forms.Label();
             this.btnSaveMocTien = new System.Windows.Forms.Button();
             this.txtMocTien = new System.Windows.Forms.TextBox();
@@ -66,20 +67,24 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(756, 21);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(697, 22);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 17);
+            this.label3.Size = new System.Drawing.Size(163, 34);
             this.label3.TabIndex = 68;
-            this.label3.Text = "Mốc Tiền";
+            this.label3.Text = "MỐC TIỀN";
             // 
             // btnSaveMocTien
             // 
-            this.btnSaveMocTien.Location = new System.Drawing.Point(987, 26);
+            this.btnSaveMocTien.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveMocTien.Location = new System.Drawing.Point(1008, 25);
             this.btnSaveMocTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveMocTien.Name = "btnSaveMocTien";
             this.btnSaveMocTien.Size = new System.Drawing.Size(75, 23);
             this.btnSaveMocTien.TabIndex = 67;
-            this.btnSaveMocTien.Text = "Save";
+            this.btnSaveMocTien.Text = "Lưu";
             this.btnSaveMocTien.UseVisualStyleBackColor = true;
             // 
             // txtMocTien
@@ -92,48 +97,59 @@
             // 
             // btnDeleteThu
             // 
-            this.btnDeleteThu.Location = new System.Drawing.Point(987, 426);
+            this.btnDeleteThu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteThu.Location = new System.Drawing.Point(1008, 412);
             this.btnDeleteThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteThu.Name = "btnDeleteThu";
             this.btnDeleteThu.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteThu.TabIndex = 65;
-            this.btnDeleteThu.Text = "Delete";
+            this.btnDeleteThu.Text = "Xóa";
             this.btnDeleteThu.UseVisualStyleBackColor = true;
             // 
             // btnDeleteChi
             // 
-            this.btnDeleteChi.Location = new System.Drawing.Point(987, 297);
+            this.btnDeleteChi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteChi.Location = new System.Drawing.Point(1008, 297);
             this.btnDeleteChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeleteChi.Name = "btnDeleteChi";
             this.btnDeleteChi.Size = new System.Drawing.Size(75, 23);
             this.btnDeleteChi.TabIndex = 64;
-            this.btnDeleteChi.Text = "Delete";
+            this.btnDeleteChi.Text = "Xóa";
             this.btnDeleteChi.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(81, 432);
+            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Font = new System.Drawing.Font("Modern No. 20", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Snow;
+            this.label2.Location = new System.Drawing.Point(36, 426);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 17);
+            this.label2.Size = new System.Drawing.Size(105, 25);
             this.label2.TabIndex = 63;
             this.label2.Text = "Thu Vào";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(92, 297);
+            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Font = new System.Drawing.Font("Modern No. 20", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(49, 297);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(45, 17);
+            this.label1.Size = new System.Drawing.Size(79, 25);
             this.label1.TabIndex = 62;
             this.label1.Text = "Chi ra";
             // 
             // lbeSoluong
             // 
             this.lbeSoluong.AutoSize = true;
-            this.lbeSoluong.Location = new System.Drawing.Point(805, 107);
+            this.lbeSoluong.BackColor = System.Drawing.Color.Transparent;
+            this.lbeSoluong.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbeSoluong.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lbeSoluong.Location = new System.Drawing.Point(805, 108);
             this.lbeSoluong.Name = "lbeSoluong";
-            this.lbeSoluong.Size = new System.Drawing.Size(69, 17);
+            this.lbeSoluong.Size = new System.Drawing.Size(81, 20);
             this.lbeSoluong.TabIndex = 61;
             this.lbeSoluong.Text = "Số Lượng";
             // 
@@ -147,7 +163,7 @@
             // 
             // ngaythangthu
             // 
-            this.ngaythangthu.Location = new System.Drawing.Point(613, 201);
+            this.ngaythangthu.Location = new System.Drawing.Point(590, 201);
             this.ngaythangthu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ngaythangthu.Name = "ngaythangthu";
             this.ngaythangthu.Size = new System.Drawing.Size(222, 22);
@@ -155,6 +171,7 @@
             // 
             // ngaythangChi
             // 
+            this.ngaythangChi.CalendarTrailingForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.ngaythangChi.Location = new System.Drawing.Point(575, 107);
             this.ngaythangChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ngaythangChi.Name = "ngaythangChi";
@@ -165,7 +182,7 @@
             // 
             this.grdThuvao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdThuvao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdThuvao.Location = new System.Drawing.Point(150, 432);
+            this.grdThuvao.Location = new System.Drawing.Point(150, 449);
             this.grdThuvao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grdThuvao.Name = "grdThuvao";
             this.grdThuvao.RowHeadersVisible = false;
@@ -189,39 +206,47 @@
             // 
             // btnSavethu
             // 
-            this.btnSavethu.Location = new System.Drawing.Point(987, 200);
+            this.btnSavethu.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSavethu.Location = new System.Drawing.Point(1008, 197);
             this.btnSavethu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSavethu.Name = "btnSavethu";
             this.btnSavethu.Size = new System.Drawing.Size(75, 23);
             this.btnSavethu.TabIndex = 55;
-            this.btnSavethu.Text = "Save";
+            this.btnSavethu.Text = "Lưu";
             this.btnSavethu.UseVisualStyleBackColor = true;
             // 
             // btnSaveChi
             // 
-            this.btnSaveChi.Location = new System.Drawing.Point(987, 107);
+            this.btnSaveChi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveChi.Location = new System.Drawing.Point(1008, 103);
             this.btnSaveChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveChi.Name = "btnSaveChi";
             this.btnSaveChi.Size = new System.Drawing.Size(75, 23);
             this.btnSaveChi.TabIndex = 54;
-            this.btnSaveChi.Text = "Save";
+            this.btnSaveChi.Text = "Lưu";
             this.btnSaveChi.UseVisualStyleBackColor = true;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(689, 257);
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label11.Location = new System.Drawing.Point(670, 257);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(77, 17);
+            this.label11.Size = new System.Drawing.Size(103, 21);
             this.label11.TabIndex = 53;
             this.label11.Text = "Tổng nhập";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(701, 157);
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label10.Location = new System.Drawing.Point(682, 157);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(65, 17);
+            this.label10.Size = new System.Drawing.Size(93, 21);
             this.label10.TabIndex = 52;
             this.label10.Text = "Tổng Chi";
             // 
@@ -267,7 +292,7 @@
             // 
             // txtChi
             // 
-            this.txtChi.Location = new System.Drawing.Point(316, 107);
+            this.txtChi.Location = new System.Drawing.Point(291, 104);
             this.txtChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtChi.Name = "txtChi";
             this.txtChi.Size = new System.Drawing.Size(100, 22);
@@ -275,34 +300,43 @@
             // 
             // txtTaiKhoan
             // 
-            this.txtTaiKhoan.Location = new System.Drawing.Point(200, 21);
+            this.txtTaiKhoan.Font = new System.Drawing.Font("Stencil", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTaiKhoan.Location = new System.Drawing.Point(274, 26);
             this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(296, 22);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(107, 35);
             this.txtTaiKhoan.TabIndex = 45;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(422, 201);
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Modern No. 20", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label9.Location = new System.Drawing.Point(424, 203);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 17);
+            this.label9.Size = new System.Drawing.Size(54, 17);
             this.label9.TabIndex = 44;
             this.label9.Text = "Số Tiền";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label8.Location = new System.Drawing.Point(197, 201);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(93, 17);
+            this.label8.Size = new System.Drawing.Size(108, 21);
             this.label8.TabIndex = 43;
             this.label8.Text = "Tên thu nhập";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Modern No. 20", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label7.Location = new System.Drawing.Point(80, 201);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(85, 20);
@@ -312,25 +346,33 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(422, 107);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Location = new System.Drawing.Point(421, 109);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(30, 17);
+            this.label6.Size = new System.Drawing.Size(36, 21);
             this.label6.TabIndex = 41;
             this.label6.Text = "Giá";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(197, 107);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(188, 107);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 17);
+            this.label5.Size = new System.Drawing.Size(97, 21);
             this.label5.TabIndex = 40;
             this.label5.Text = "Tên chi tiêu";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(91, 108);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 21);
@@ -340,10 +382,12 @@
             // lbeTenTK
             // 
             this.lbeTenTK.AutoSize = true;
-            this.lbeTenTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbeTenTK.Location = new System.Drawing.Point(64, 23);
+            this.lbeTenTK.BackColor = System.Drawing.SystemColors.ControlText;
+            this.lbeTenTK.Font = new System.Drawing.Font("Script MT Bold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbeTenTK.ForeColor = System.Drawing.Color.Red;
+            this.lbeTenTK.Location = new System.Drawing.Point(47, 24);
             this.lbeTenTK.Name = "lbeTenTK";
-            this.lbeTenTK.Size = new System.Drawing.Size(130, 20);
+            this.lbeTenTK.Size = new System.Drawing.Size(204, 37);
             this.lbeTenTK.TabIndex = 38;
             this.lbeTenTK.Text = "Tên Tài Khoản";
             // 
@@ -351,7 +395,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1139, 545);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1124, 554);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSaveMocTien);
             this.Controls.Add(this.txtMocTien);
