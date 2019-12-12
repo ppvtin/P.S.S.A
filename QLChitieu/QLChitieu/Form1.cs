@@ -27,7 +27,10 @@ namespace QLChitieu
             {
                 MessageBox.Show("Dang nhap thanh cong");
                 QLCT qlct = new QLCT(txt_account.Text);
+                
                 qlct.ShowDialog();
+                
+                
             }
             else
             {

@@ -89,7 +89,7 @@
             // 
             // txtMocTien
             // 
-            this.txtMocTien.Location = new System.Drawing.Point(881, 26);
+            this.txtMocTien.Location = new System.Drawing.Point(902, 22);
             this.txtMocTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMocTien.Name = "txtMocTien";
             this.txtMocTien.Size = new System.Drawing.Size(100, 22);
@@ -147,7 +147,7 @@
             this.lbeSoluong.BackColor = System.Drawing.Color.Transparent;
             this.lbeSoluong.Font = new System.Drawing.Font("Mongolian Baiti", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbeSoluong.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lbeSoluong.Location = new System.Drawing.Point(805, 108);
+            this.lbeSoluong.Location = new System.Drawing.Point(815, 108);
             this.lbeSoluong.Name = "lbeSoluong";
             this.lbeSoluong.Size = new System.Drawing.Size(81, 20);
             this.lbeSoluong.TabIndex = 61;
@@ -155,7 +155,7 @@
             // 
             // txtSoluong
             // 
-            this.txtSoluong.Location = new System.Drawing.Point(881, 107);
+            this.txtSoluong.Location = new System.Drawing.Point(902, 109);
             this.txtSoluong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSoluong.Name = "txtSoluong";
             this.txtSoluong.Size = new System.Drawing.Size(100, 22);
@@ -172,7 +172,7 @@
             // ngaythangChi
             // 
             this.ngaythangChi.CalendarTrailingForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ngaythangChi.Location = new System.Drawing.Point(575, 107);
+            this.ngaythangChi.Location = new System.Drawing.Point(590, 109);
             this.ngaythangChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ngaythangChi.Name = "ngaythangChi";
             this.ngaythangChi.Size = new System.Drawing.Size(224, 22);
@@ -188,7 +188,7 @@
             this.grdThuvao.RowHeadersVisible = false;
             this.grdThuvao.RowHeadersWidth = 51;
             this.grdThuvao.RowTemplate.Height = 24;
-            this.grdThuvao.Size = new System.Drawing.Size(831, 94);
+            this.grdThuvao.Size = new System.Drawing.Size(852, 94);
             this.grdThuvao.TabIndex = 57;
             // 
             // grdChi
@@ -201,7 +201,7 @@
             this.grdChi.RowHeadersVisible = false;
             this.grdChi.RowHeadersWidth = 51;
             this.grdChi.RowTemplate.Height = 24;
-            this.grdChi.Size = new System.Drawing.Size(831, 94);
+            this.grdChi.Size = new System.Drawing.Size(852, 94);
             this.grdChi.TabIndex = 56;
             // 
             // btnSavethu
@@ -218,7 +218,7 @@
             // btnSaveChi
             // 
             this.btnSaveChi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveChi.Location = new System.Drawing.Point(1008, 103);
+            this.btnSaveChi.Location = new System.Drawing.Point(1008, 110);
             this.btnSaveChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveChi.Name = "btnSaveChi";
             this.btnSaveChi.Size = new System.Drawing.Size(75, 23);
@@ -255,7 +255,7 @@
             this.txtTongChi.Location = new System.Drawing.Point(781, 157);
             this.txtTongChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTongChi.Name = "txtTongChi";
-            this.txtTongChi.Size = new System.Drawing.Size(200, 22);
+            this.txtTongChi.Size = new System.Drawing.Size(221, 22);
             this.txtTongChi.TabIndex = 51;
             // 
             // txtTongThu
@@ -263,7 +263,7 @@
             this.txtTongThu.Location = new System.Drawing.Point(781, 260);
             this.txtTongThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTongThu.Name = "txtTongThu";
-            this.txtTongThu.Size = new System.Drawing.Size(200, 22);
+            this.txtTongThu.Size = new System.Drawing.Size(221, 22);
             this.txtTongThu.TabIndex = 50;
             // 
             // txtGiathu
@@ -276,7 +276,7 @@
             // 
             // txtThu
             // 
-            this.txtThu.Location = new System.Drawing.Point(316, 201);
+            this.txtThu.Location = new System.Drawing.Point(318, 203);
             this.txtThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtThu.Name = "txtThu";
             this.txtThu.Size = new System.Drawing.Size(100, 22);
@@ -284,7 +284,7 @@
             // 
             // txtGiaChi
             // 
-            this.txtGiaChi.Location = new System.Drawing.Point(458, 108);
+            this.txtGiaChi.Location = new System.Drawing.Point(484, 111);
             this.txtGiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGiaChi.Name = "txtGiaChi";
             this.txtGiaChi.Size = new System.Drawing.Size(100, 22);
@@ -292,7 +292,7 @@
             // 
             // txtChi
             // 
-            this.txtChi.Location = new System.Drawing.Point(291, 104);
+            this.txtChi.Location = new System.Drawing.Point(318, 108);
             this.txtChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtChi.Name = "txtChi";
             this.txtChi.Size = new System.Drawing.Size(100, 22);
@@ -327,7 +327,7 @@
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label8.Location = new System.Drawing.Point(197, 201);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(108, 21);
+            this.label8.Size = new System.Drawing.Size(115, 21);
             this.label8.TabIndex = 43;
             this.label8.Text = "Tên thu nhập";
             // 
@@ -349,9 +349,9 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Modern No. 20", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(421, 109);
+            this.label6.Location = new System.Drawing.Point(424, 110);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 21);
+            this.label6.Size = new System.Drawing.Size(38, 21);
             this.label6.TabIndex = 41;
             this.label6.Text = "Giá";
             // 
@@ -363,7 +363,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Location = new System.Drawing.Point(188, 107);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(97, 21);
+            this.label5.Size = new System.Drawing.Size(105, 21);
             this.label5.TabIndex = 40;
             this.label5.Text = "Tên chi tiêu";
             // 
@@ -430,6 +430,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lbeTenTK);
             this.Name = "QLCT";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QLCT";
             ((System.ComponentModel.ISupportInitialize)(this.grdThuvao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdChi)).EndInit();

@@ -40,10 +40,10 @@
             // btnDN
             // 
             this.btnDN.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDN.Location = new System.Drawing.Point(293, 105);
+            this.btnDN.Location = new System.Drawing.Point(257, 105);
             this.btnDN.Margin = new System.Windows.Forms.Padding(4);
             this.btnDN.Name = "btnDN";
-            this.btnDN.Size = new System.Drawing.Size(97, 28);
+            this.btnDN.Size = new System.Drawing.Size(123, 44);
             this.btnDN.TabIndex = 11;
             this.btnDN.Text = "Đăng nhập";
             this.btnDN.UseVisualStyleBackColor = true;
@@ -54,7 +54,7 @@
             this.btnDK.Location = new System.Drawing.Point(125, 105);
             this.btnDK.Margin = new System.Windows.Forms.Padding(4);
             this.btnDK.Name = "btnDK";
-            this.btnDK.Size = new System.Drawing.Size(97, 28);
+            this.btnDK.Size = new System.Drawing.Size(123, 44);
             this.btnDK.TabIndex = 10;
             this.btnDK.Text = "Đăng ký";
             this.btnDK.UseVisualStyleBackColor = true;
@@ -116,6 +116,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
