@@ -163,18 +163,20 @@
             // 
             // grdThuvao
             // 
+            this.grdThuvao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdThuvao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdThuvao.Location = new System.Drawing.Point(150, 458);
+            this.grdThuvao.Location = new System.Drawing.Point(150, 432);
             this.grdThuvao.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grdThuvao.Name = "grdThuvao";
             this.grdThuvao.RowHeadersVisible = false;
             this.grdThuvao.RowHeadersWidth = 51;
             this.grdThuvao.RowTemplate.Height = 24;
-            this.grdThuvao.Size = new System.Drawing.Size(797, 90);
+            this.grdThuvao.Size = new System.Drawing.Size(831, 94);
             this.grdThuvao.TabIndex = 57;
             // 
             // grdChi
             // 
+            this.grdChi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.grdChi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.grdChi.Location = new System.Drawing.Point(150, 318);
             this.grdChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -182,7 +184,7 @@
             this.grdChi.RowHeadersVisible = false;
             this.grdChi.RowHeadersWidth = 51;
             this.grdChi.RowTemplate.Height = 24;
-            this.grdChi.Size = new System.Drawing.Size(797, 94);
+            this.grdChi.Size = new System.Drawing.Size(831, 94);
             this.grdChi.TabIndex = 56;
             // 
             // btnSavethu
@@ -257,7 +259,7 @@
             // 
             // txtGiaChi
             // 
-            this.txtGiaChi.Location = new System.Drawing.Point(458, 107);
+            this.txtGiaChi.Location = new System.Drawing.Point(458, 108);
             this.txtGiaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGiaChi.Name = "txtGiaChi";
             this.txtGiaChi.Size = new System.Drawing.Size(100, 22);
@@ -265,7 +267,7 @@
             // 
             // txtChi
             // 
-            this.txtChi.Location = new System.Drawing.Point(294, 107);
+            this.txtChi.Location = new System.Drawing.Point(316, 107);
             this.txtChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtChi.Name = "txtChi";
             this.txtChi.Size = new System.Drawing.Size(100, 22);
@@ -349,7 +351,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1147, 586);
+            this.ClientSize = new System.Drawing.Size(1139, 545);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSaveMocTien);
             this.Controls.Add(this.txtMocTien);

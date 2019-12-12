@@ -13,7 +13,7 @@ namespace QLChitieu
     public partial class DoubleClickThu : Form
     {
         DatabaseManager business;
-        public DoubleClickThu(string tenthu , double giatri , DateTime ngaythangnam)
+        public DoubleClickThu()
         {
 
             InitializeComponent();

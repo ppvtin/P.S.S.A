@@ -41,7 +41,7 @@ namespace QLChitieu
 
         void grdChi_DoubleClick(object sender, EventArgs e)
         {
-            DoubleClickThu dbclick = new DoubleClickThu();
+            DoublleClick dbclick = new DoublleClick();
             string ten = this.grdChi.SelectedRows[0].Cells[2].Value.ToString();
             double giatien = double.Parse(this.grdChi.SelectedRows[0].Cells[3].Value.ToString());
             int soluong = int.Parse(this.grdChi.SelectedRows[0].Cells[4].Value.ToString());
