@@ -114,14 +114,6 @@ namespace QLChitieu
                 return temp.Sum();
             }
         } 
-
-
-
-
-
-
-
-
         public void deleteThu(int Ma)
         {
             DataManagerMoneyEntities db = new DataManagerMoneyEntities();
