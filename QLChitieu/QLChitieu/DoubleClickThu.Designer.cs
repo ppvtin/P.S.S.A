@@ -34,6 +34,8 @@
             this.txtThuDBT = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtMaThu = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // ngaythangthuDBT
@@ -88,11 +90,30 @@
             this.label8.TabIndex = 60;
             this.label8.Text = "Tên thu nhập";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(46, 67);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(35, 17);
+            this.label5.TabIndex = 66;
+            this.label5.Text = "STT";
+            // 
+            // txtMaThu
+            // 
+            this.txtMaThu.Location = new System.Drawing.Point(154, 67);
+            this.txtMaThu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaThu.Name = "txtMaThu";
+            this.txtMaThu.Size = new System.Drawing.Size(100, 22);
+            this.txtMaThu.TabIndex = 67;
+            // 
             // DoubleClickThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 253);
+            this.Controls.Add(this.txtMaThu);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.ngaythangthuDBT);
             this.Controls.Add(this.btnSavethuDBT);
             this.Controls.Add(this.txtGiathuDBT);
@@ -114,5 +135,7 @@
         private System.Windows.Forms.TextBox txtThuDBT;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtMaThu;
     }
 }

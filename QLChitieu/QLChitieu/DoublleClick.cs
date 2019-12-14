@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace QLChitieu
 {
-    public partial class DoublleClick : Form
+    public partial class DoublleClickChi : Form
     {
         DatabaseManager business;
-        public DoublleClick()
+        public DoublleClickChi()
         {
             InitializeComponent();
             btnSaveChiDB.Click += btnSaveChiDB_Click;

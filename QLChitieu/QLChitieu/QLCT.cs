@@ -33,15 +33,15 @@ namespace QLChitieu
         void grdThuvao_DoubleClick(object sender, EventArgs e)
         {
             DoubleClickThu dbclick = new DoubleClickThu();
-            string ten = this.grdThuvao.SelectedRows[0].Cells[2].Value.ToString();
-            double giatien = double.Parse(this.grdThuvao.SelectedRows[0].Cells[3].Value.ToString());
-            DateTime thoigian = DateTime.Parse(this.grdThuvao.SelectedRows[0].Cells[5].Value.ToString());
+            //string ten = this.grdThuvao.SelectedRows[0].Cells[2].Value.ToString();
+            //double giatien = double.Parse(this.grdThuvao.SelectedRows[0].Cells[3].Value.ToString());
+            //DateTime thoigian = DateTime.Parse(this.grdThuvao.SelectedRows[0].Cells[5].Value.ToString());
             dbclick.ShowDialog();
         }
 
         void grdChi_DoubleClick(object sender, EventArgs e)
         {
-            DoublleClick dbclick = new DoublleClick();
+            DoublleClickChi dbclick = new DoublleClickChi();
             string ten = this.grdChi.SelectedRows[0].Cells[2].Value.ToString();
             double giatien = double.Parse(this.grdChi.SelectedRows[0].Cells[3].Value.ToString());
             int soluong = int.Parse(this.grdChi.SelectedRows[0].Cells[4].Value.ToString());
@@ -54,9 +54,6 @@ namespace QLChitieu
             string taikhoan = txtTaiKhoan.Text;
             double Moctien = double.Parse(txtMocTien.Text);
             business.SetMoctien(Moctien , taikhoan);
-            // luu y
-            business.EditMoctien(Moctien, taikhoan);
-      
             this.OnLoad(null);
             MessageBox.Show("Đã thay đổi mốc tiền của TK : "+ taikhoan + " thành " + business.GetMocTien(taikhoan));
 

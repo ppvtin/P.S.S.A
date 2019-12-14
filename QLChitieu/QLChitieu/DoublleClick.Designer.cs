@@ -1,6 +1,6 @@
 ﻿namespace QLChitieu
 {
-    partial class DoublleClick
+    partial class DoublleClickChi
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,8 @@
             this.txtChiDB = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtMaChi = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lbeSoluong
@@ -107,11 +109,30 @@
             this.label5.TabIndex = 62;
             this.label5.Text = "Tên chi tiêu";
             // 
-            // DoublleClick
+            // txtMaChi
+            // 
+            this.txtMaChi.Location = new System.Drawing.Point(133, 67);
+            this.txtMaChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtMaChi.Name = "txtMaChi";
+            this.txtMaChi.Size = new System.Drawing.Size(100, 22);
+            this.txtMaChi.TabIndex = 70;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(36, 72);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(27, 17);
+            this.label1.TabIndex = 71;
+            this.label1.Text = "Mã";
+            // 
+            // DoublleClickChi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 253);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtMaChi);
             this.Controls.Add(this.lbeSoluong);
             this.Controls.Add(this.txtSoluongDB);
             this.Controls.Add(this.ngaythangChiDB);
@@ -120,7 +141,7 @@
             this.Controls.Add(this.txtChiDB);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Name = "DoublleClick";
+            this.Name = "DoublleClickChi";
             this.Text = "DoublleClick";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -137,5 +158,7 @@
         private System.Windows.Forms.TextBox txtChiDB;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtMaChi;
+        private System.Windows.Forms.Label label1;
     }
 }

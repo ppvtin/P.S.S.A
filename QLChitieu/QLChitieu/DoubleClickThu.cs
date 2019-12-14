@@ -15,18 +15,21 @@ namespace QLChitieu
         DatabaseManager business;
         public DoubleClickThu()
         {
-
+            business = new DatabaseManager();
             InitializeComponent();
             btnSavethuDBT.Click += btnSavethuDBT_Click;
         }
 
         void btnSavethuDBT_Click(object sender, EventArgs e)
         {
+            
+            int ma = int.Parse(txtMaThu.Text);
             string tenthu = txtThuDBT.Text;
-            double giathu = double.Parse(txtGiathuDBT.Text);
-            DateTime datetime = DateTime.Parse(ngaythangthuDBT.Text);
-            business.Editthu(tenthu, giathu, datetime);
+            float giathu = float.Parse(txtGiathuDBT.Text);
+            DateTime ngaythu = DateTime.Parse(ngaythangthuDBT.Text);
+            business.Editthu(ma, tenthu, giathu, ngaythu);
             this.OnLoad(null);
+            
         }
     }
 }

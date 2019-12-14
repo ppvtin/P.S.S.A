@@ -26,7 +26,7 @@ namespace QLChitieu
             }
             return isValid;
         }
-
+      
         public void DangKy(string tk, string matKhau)
         {
             TaiKhoan temp = new TaiKhoan();
@@ -88,42 +88,18 @@ namespace QLChitieu
             return db.TaiKhoans.Find(taikhoan).Moctien.Value;
 
         }
-        public void EditMoctien( double moctien , string taikhoan)
-        {
-            DataManagerMoneyEntities db = new DataManagerMoneyEntities();
-            TaiKhoan t = db.TaiKhoans.Find(taikhoan);
-            t.Moctien = moctien;
-            db.SaveChanges();
-        }
-        public void Editthu( string tenthu, double gia, DateTime time)
-        {
-            ThuVao temp = new ThuVao();
-            
-            temp.TenThuVao = tenthu;
-            temp.GiaTien = gia;
-            temp.Time = time;
+        
 
-            DataManagerMoneyEntities db = new DataManagerMoneyEntities();
-            db.ThuVaos.Add(temp);
-            db.SaveChanges();
-            db.Dispose();
-        }
-        public void EditChi( string tenchi, double gia, int soluong, DateTime time)
-        {
-            ChiRa temp = new ChiRa();
-            
-            temp.TenChi = tenchi;
-            temp.soluong = soluong;
-            temp.GiaTien = gia * soluong;
-            temp.Time = time;
 
-            DataManagerMoneyEntities db = new DataManagerMoneyEntities();
-            db.ChiRas.Add(temp);
-            db.SaveChanges();
-            db.Dispose();
-        }
-
+      
        
+
+
+
+
+
+
+
 
         public double GetTongTienChi()
         {
@@ -150,7 +126,15 @@ namespace QLChitieu
             {
                 return temp.Sum();
             }
-        }
+        } 
+
+
+
+
+
+
+
+
         public void deleteThu(int Ma)
         {
             DataManagerMoneyEntities db = new DataManagerMoneyEntities();
@@ -164,6 +148,40 @@ namespace QLChitieu
             DataManagerMoneyEntities db = new DataManagerMoneyEntities();
             var data = db.ChiRas.Find(Ma);
             db.ChiRas.Remove(data);
+            db.SaveChanges();
+            db.Dispose();
+        }
+
+
+
+
+
+
+
+
+
+
+        public void Editthu(int ma, string tenthu, float gia, DateTime time)
+        {
+            var db = new DataManagerMoneyEntities();
+            var t = db.ThuVaos.Find(ma);
+            t.TenThuVao = tenthu;
+            t.GiaTien = gia;
+            t.Time = time;
+            db.SaveChanges();
+
+        }
+        public void EditChi(string tenchi, double gia, int soluong, DateTime time)
+        {
+            ChiRa temp = new ChiRa();
+
+            temp.TenChi = tenchi;
+            temp.soluong = soluong;
+            temp.GiaTien = gia * soluong;
+            temp.Time = time;
+
+            DataManagerMoneyEntities db = new DataManagerMoneyEntities();
+            db.ChiRas.Add(temp);
             db.SaveChanges();
             db.Dispose();
         }
