@@ -18,6 +18,12 @@ namespace QLChitieu
             business = new DatabaseManager();
             InitializeComponent();
             btnSavethuDBT.Click += btnSavethuDBT_Click;
+            btncancelDBCT.Click += btncancelDBCT_Click;
+        }
+
+        void btncancelDBCT_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         void btnSavethuDBT_Click(object sender, EventArgs e)

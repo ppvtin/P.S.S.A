@@ -39,6 +39,7 @@
             // 
             // btnDN
             // 
+            this.btnDN.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnDN.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDN.Location = new System.Drawing.Point(257, 105);
             this.btnDN.Margin = new System.Windows.Forms.Padding(4);
@@ -46,18 +47,20 @@
             this.btnDN.Size = new System.Drawing.Size(123, 44);
             this.btnDN.TabIndex = 11;
             this.btnDN.Text = "Đăng nhập";
-            this.btnDN.UseVisualStyleBackColor = true;
+            this.btnDN.UseVisualStyleBackColor = false;
             // 
             // btnDK
             // 
+            this.btnDK.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnDK.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDK.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnDK.Location = new System.Drawing.Point(125, 105);
             this.btnDK.Margin = new System.Windows.Forms.Padding(4);
             this.btnDK.Name = "btnDK";
             this.btnDK.Size = new System.Drawing.Size(123, 44);
             this.btnDK.TabIndex = 10;
             this.btnDK.Text = "Đăng ký";
-            this.btnDK.UseVisualStyleBackColor = true;
+            this.btnDK.UseVisualStyleBackColor = false;
             // 
             // txt_Pass
             // 
@@ -81,7 +84,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Modern No. 20", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(23, 55);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -94,7 +97,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Modern No. 20", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(23, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
