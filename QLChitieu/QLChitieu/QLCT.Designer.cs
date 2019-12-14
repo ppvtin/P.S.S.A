@@ -60,6 +60,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbeTenTK = new System.Windows.Forms.Label();
+            this.btnDangXuat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.grdThuvao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdChi)).BeginInit();
             this.SuspendLayout();
@@ -70,7 +71,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(697, 22);
+            this.label3.Location = new System.Drawing.Point(478, 30);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(163, 34);
             this.label3.TabIndex = 68;
@@ -80,7 +81,7 @@
             // 
             this.btnSaveMocTien.BackColor = System.Drawing.Color.CornflowerBlue;
             this.btnSaveMocTien.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSaveMocTien.Location = new System.Drawing.Point(1008, 27);
+            this.btnSaveMocTien.Location = new System.Drawing.Point(781, 30);
             this.btnSaveMocTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSaveMocTien.Name = "btnSaveMocTien";
             this.btnSaveMocTien.Size = new System.Drawing.Size(75, 35);
@@ -90,7 +91,7 @@
             // 
             // txtMocTien
             // 
-            this.txtMocTien.Location = new System.Drawing.Point(902, 34);
+            this.txtMocTien.Location = new System.Drawing.Point(647, 40);
             this.txtMocTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtMocTien.Name = "txtMocTien";
             this.txtMocTien.Size = new System.Drawing.Size(100, 22);
@@ -396,6 +397,18 @@
             this.lbeTenTK.TabIndex = 38;
             this.lbeTenTK.Text = "Tên Tài Khoản";
             // 
+            // btnDangXuat
+            // 
+            this.btnDangXuat.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.btnDangXuat.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.Location = new System.Drawing.Point(951, 30);
+            this.btnDangXuat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(132, 35);
+            this.btnDangXuat.TabIndex = 69;
+            this.btnDangXuat.Text = "Đăng Xuất";
+            this.btnDangXuat.UseVisualStyleBackColor = false;
+            // 
             // QLCT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -403,6 +416,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1124, 554);
+            this.Controls.Add(this.btnDangXuat);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnSaveMocTien);
             this.Controls.Add(this.txtMocTien);
@@ -477,5 +491,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbeTenTK;
+        private System.Windows.Forms.Button btnDangXuat;
     }
 }

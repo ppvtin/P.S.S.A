@@ -88,19 +88,6 @@ namespace QLChitieu
             return db.TaiKhoans.Find(taikhoan).Moctien.Value;
 
         }
-        
-
-
-      
-       
-
-
-
-
-
-
-
-
         public double GetTongTienChi()
         {
             DataManagerMoneyEntities db = new DataManagerMoneyEntities();

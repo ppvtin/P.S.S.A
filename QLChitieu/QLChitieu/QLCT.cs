@@ -26,8 +26,17 @@ namespace QLChitieu
             btnDeleteChi.Click += btnDeleteChi_Click;
             btnDeleteThu.Click += btnDeleteThu_Click;
             btnSaveMocTien.Click += btnSaveMocTien_Click;
+            btnDangXuat.Click += btnDangXuat_Click;
             grdChi.DoubleClick += grdChi_DoubleClick;
             grdThuvao.DoubleClick += grdThuvao_DoubleClick;
+            
+        }
+
+        void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.ShowDialog();
+            this.Close();
         }
 
         void grdThuvao_DoubleClick(object sender, EventArgs e)

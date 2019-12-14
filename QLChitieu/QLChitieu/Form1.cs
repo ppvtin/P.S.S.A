@@ -20,24 +20,20 @@ namespace QLChitieu
             this.btnDK.Click += btnDK_Click;
             this.btnDN.Click += btnDN_Click;
         }
-
         void btnDN_Click(object sender, EventArgs e)
         {
             if (Business.IsValidLogin(txt_account.Text, txt_Pass.Text))
             {
                 MessageBox.Show("Dang nhap thanh cong");
                 QLCT qlct = new QLCT(txt_account.Text);
-                
                 qlct.ShowDialog();
-                
-                
+                this.Close();
             }
             else
             {
                 MessageBox.Show("Dang nhap that bai");
             }
         }
-
         void btnDK_Click(object sender, EventArgs e)
         {
             DangkiForm DKF2 = new DangkiForm();
