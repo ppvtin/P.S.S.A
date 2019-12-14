@@ -450,7 +450,7 @@
             this.Controls.Add(this.lbeTenTK);
             this.Name = "QLCT";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "QLCT";
+            this.Text = "Quản Lý Chi Tiêu";
             ((System.ComponentModel.ISupportInitialize)(this.grdThuvao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdChi)).EndInit();
             this.ResumeLayout(false);

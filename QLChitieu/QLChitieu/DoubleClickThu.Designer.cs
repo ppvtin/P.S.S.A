@@ -140,7 +140,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Name = "DoubleClickThu";
-            this.Text = "DoubleClickThu";
+            this.Text = "Thay Đổi Thu Nhập";
             this.ResumeLayout(false);
             this.PerformLayout();
 

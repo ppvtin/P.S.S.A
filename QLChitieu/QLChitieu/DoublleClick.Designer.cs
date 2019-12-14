@@ -162,7 +162,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Name = "DoublleClickChi";
-            this.Text = "DoublleClick";
+            this.Text = "Thay Đổi Chi Tiêu";
             this.ResumeLayout(false);
             this.PerformLayout();
 
