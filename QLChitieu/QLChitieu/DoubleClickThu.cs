@@ -35,7 +35,7 @@ namespace QLChitieu
             DateTime ngaythu = DateTime.Parse(ngaythangthuDBT.Text);
             business.Editthu(ma, tenthu, giathu, ngaythu);
             this.OnLoad(null);
-            
+            this.Close();
         }
     }
 }

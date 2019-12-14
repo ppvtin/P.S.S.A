@@ -36,6 +36,7 @@ namespace QLChitieu
             int soluong = int.Parse(txtSoluongDB.Text);
             business.EditChi(ma, tenthu, giathu,soluong, ngaythu );
             this.OnLoad(null);
+            this.Close();
         }
        
            
