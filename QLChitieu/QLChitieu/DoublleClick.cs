@@ -15,17 +15,20 @@ namespace QLChitieu
         DatabaseManager business;
         public DoublleClickChi()
         {
+            business = new DatabaseManager();
             InitializeComponent();
             btnSaveChiDB.Click += btnSaveChiDB_Click;
         }
 
         void btnSaveChiDB_Click(object sender, EventArgs e)
         {
-            string tenchi = txtChiDB.Text;
-            double giachi = double.Parse(txtGiaChiDB.Text);
+
+            int ma = int.Parse(txtMaChi.Text);
+            string tenthu = txtChiDB.Text;
+            float giathu = float.Parse(txtGiaChiDB.Text);
+            DateTime ngaythu = DateTime.Parse(ngaythangChiDB.Text);
             int soluong = int.Parse(txtSoluongDB.Text);
-            DateTime datetime = DateTime.Parse(ngaythangChiDB.Text);
-            business.EditChi(tenchi, giachi, soluong, datetime);
+            business.EditChi(ma, tenthu, giathu,soluong, ngaythu );
             this.OnLoad(null);
         }
        

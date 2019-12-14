@@ -171,19 +171,15 @@ namespace QLChitieu
             db.SaveChanges();
 
         }
-        public void EditChi(string tenchi, double gia, int soluong, DateTime time)
+        public void EditChi(int ma ,string tenchi, double gia, int soluong, DateTime time)
         {
-            ChiRa temp = new ChiRa();
-
-            temp.TenChi = tenchi;
-            temp.soluong = soluong;
-            temp.GiaTien = gia * soluong;
-            temp.Time = time;
-
-            DataManagerMoneyEntities db = new DataManagerMoneyEntities();
-            db.ChiRas.Add(temp);
+            var db = new DataManagerMoneyEntities();
+            var t = db.ChiRas.Find(ma);
+            t.TenChi = tenchi;
+            t.GiaTien = gia;
+            t.Time = time;
+            t.soluong = soluong;
             db.SaveChanges();
-            db.Dispose();
         }
     }
 }
