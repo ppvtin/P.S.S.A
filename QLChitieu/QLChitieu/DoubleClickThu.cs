@@ -14,7 +14,7 @@ namespace QLChitieu
     {
         DatabaseManager business;
         public DoubleClickThu()
-        {
+        { 
             business = new DatabaseManager();
             InitializeComponent();
             btnSavethuDBT.Click += btnSavethuDBT_Click;
