@@ -155,7 +155,7 @@ namespace QLChitieu
             var db = new DataManagerMoneyEntities();
             var t = db.ChiRas.Find(ma);
             t.TenChi = tenchi;
-            t.GiaTien = gia;
+            t.GiaTien = gia * soluong;
             t.Time = time;
             t.soluong = soluong;
             db.SaveChanges();
