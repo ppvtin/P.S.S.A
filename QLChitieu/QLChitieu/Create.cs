@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace QLChitieu
 {
-    public partial class DangkiForm : Form
+    public partial class Create : Form
     {
         DatabaseManager bussiness;
-        public DangkiForm() 
+        public Create() 
         {
             InitializeComponent(); 
             this.btnCancel.Click += btnCancel_Click;

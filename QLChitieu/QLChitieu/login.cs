@@ -36,7 +36,7 @@ namespace QLChitieu
         }
         void btnDK_Click(object sender, EventArgs e)
         {
-            DangkiForm DKF2 = new DangkiForm();
+            Create DKF2 = new Create();
             DKF2.ShowDialog();
         }
     }
