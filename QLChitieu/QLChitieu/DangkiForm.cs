@@ -15,7 +15,7 @@ namespace QLChitieu
         DatabaseManager bussiness;
         public DangkiForm() 
         {
-            InitializeComponent();
+            InitializeComponent(); 
             this.btnCancel.Click += btnCancel_Click;
             this.btnSave.Click += btnSave_Click;
             bussiness = new DatabaseManager();
