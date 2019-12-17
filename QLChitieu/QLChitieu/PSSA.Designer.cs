@@ -1,6 +1,6 @@
 ﻿namespace QLChitieu
 {
-    partial class QLCT
+    partial class PSSA
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLCT));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PSSA));
             this.label3 = new System.Windows.Forms.Label();
             this.btnSaveMocTien = new System.Windows.Forms.Button();
             this.txtMocTien = new System.Windows.Forms.TextBox();

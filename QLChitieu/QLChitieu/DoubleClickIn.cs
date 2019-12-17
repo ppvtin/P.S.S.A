@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace QLChitieu
 {
-    public partial class DoubleClickThu : Form
+    public partial class DoubleClickIn : Form
     {
         DatabaseManager business;
-        public DoubleClickThu()
+        public DoubleClickIn()
         {  
             business = new DatabaseManager();
             InitializeComponent();

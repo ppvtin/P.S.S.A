@@ -1,6 +1,6 @@
 ﻿namespace QLChitieu
 {
-    partial class DoubleClickThu
+    partial class DoubleClickIn
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoubleClickThu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoubleClickIn));
             this.ngaythangthuDBT = new System.Windows.Forms.DateTimePicker();
             this.btnSavethuDBT = new System.Windows.Forms.Button();
             this.txtGiathuDBT = new System.Windows.Forms.TextBox();

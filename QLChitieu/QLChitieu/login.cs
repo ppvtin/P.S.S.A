@@ -25,7 +25,7 @@ namespace QLChitieu
             if (Business.IsValidLogin(txt_account.Text, txt_Pass.Text))
             {
                 MessageBox.Show("Dang nhap thanh cong");
-                QLCT qlct = new QLCT(txt_account.Text);
+                PSSA qlct = new PSSA(txt_account.Text);
                 qlct.ShowDialog();
                 this.Close();
             }

@@ -78,17 +78,17 @@
       <DependentUpon>Create.cs</DependentUpon>
     </Compile>
     <Compile Include="DatabaseManager.cs" />
-    <Compile Include="DoubleClickThu.cs">
+    <Compile Include="DoubleClickIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoubleClickThu.Designer.cs">
-      <DependentUpon>DoubleClickThu.cs</DependentUpon>
+    <Compile Include="DoubleClickIn.Designer.cs">
+      <DependentUpon>DoubleClickIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="DoublleClick.cs">
+    <Compile Include="DoublleClickOut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DoublleClick.Designer.cs">
-      <DependentUpon>DoublleClick.cs</DependentUpon>
+    <Compile Include="DoublleClickOut.Designer.cs">
+      <DependentUpon>DoublleClickOut.cs</DependentUpon>
     </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -98,11 +98,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="QLCT.cs">
+    <Compile Include="PSSA.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QLCT.Designer.cs">
-      <DependentUpon>QLCT.cs</DependentUpon>
+    <Compile Include="PSSA.Designer.cs">
+      <DependentUpon>PSSA.cs</DependentUpon>
     </Compile>
     <Compile Include="QLMoney.Context.cs">
       <AutoGen>True</AutoGen>
@@ -114,10 +114,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLMoney.tt</DependentUpon>
     </Compile>
-    <Compile Include="QLMoney.Designer.cs">
+    <Compile Include="PSSAMoney.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>QLMoney.edmx</DependentUpon>
+      <DependentUpon>PSSAMoney.edmx</DependentUpon>
     </Compile>
     <Compile Include="TaiKhoan.cs">
       <DependentUpon>QLMoney.tt</DependentUpon>
@@ -128,11 +128,11 @@
     <EmbeddedResource Include="Create.resx">
       <DependentUpon>Create.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoubleClickThu.resx">
-      <DependentUpon>DoubleClickThu.cs</DependentUpon>
+    <EmbeddedResource Include="DoubleClickIn.resx">
+      <DependentUpon>DoubleClickIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DoublleClick.resx">
-      <DependentUpon>DoublleClick.cs</DependentUpon>
+    <EmbeddedResource Include="DoublleClickOut.resx">
+      <DependentUpon>DoublleClickOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -146,8 +146,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="QLCT.resx">
-      <DependentUpon>QLCT.cs</DependentUpon>
+    <EmbeddedResource Include="PSSA.resx">
+      <DependentUpon>PSSA.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -159,21 +159,21 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EntityDeploy Include="QLMoney.edmx">
+    <EntityDeploy Include="PSSAMoney.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>QLMoney.Designer.cs</LastGenOutput>
+      <LastGenOutput>PSSAMoney.Designer.cs</LastGenOutput>
     </EntityDeploy>
     <None Include="QLMoney.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLMoney.edmx</DependentUpon>
+      <DependentUpon>PSSAMoney.edmx</DependentUpon>
       <LastGenOutput>QLMoney.Context.cs</LastGenOutput>
     </None>
-    <None Include="QLMoney.edmx.diagram">
-      <DependentUpon>QLMoney.edmx</DependentUpon>
+    <None Include="PSSAMoney.edmx.diagram">
+      <DependentUpon>PSSAMoney.edmx</DependentUpon>
     </None>
     <None Include="QLMoney.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLMoney.edmx</DependentUpon>
+      <DependentUpon>PSSAMoney.edmx</DependentUpon>
       <LastGenOutput>QLMoney.cs</LastGenOutput>
     </None>
   </ItemGroup>

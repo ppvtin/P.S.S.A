@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace QLChitieu
 {
-    public partial class QLCT : Form
+    public partial class PSSA : Form
     {
-        DatabaseManager business;
-        public QLCT(string taiKhoan)
+        DatabaseManager business; 
+        public PSSA(string taiKhoan)
         {
             InitializeComponent();
             this.grdThuvao.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -41,7 +41,7 @@ namespace QLChitieu
 
         void grdThuvao_DoubleClick(object sender, EventArgs e)
         {
-            DoubleClickThu dbclick = new DoubleClickThu();
+            DoubleClickIn dbclick = new DoubleClickIn();
             //string ten = this.grdThuvao.SelectedRows[0].Cells[2].Value.ToString();
             //double giatien = double.Parse(this.grdThuvao.SelectedRows[0].Cells[3].Value.ToString());
             //DateTime thoigian = DateTime.Parse(this.grdThuvao.SelectedRows[0].Cells[5].Value.ToString());
