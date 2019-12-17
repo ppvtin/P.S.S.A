@@ -13,7 +13,7 @@ namespace QLChitieu
     public partial class DangkiForm : Form
     {
         DatabaseManager bussiness;
-        public DangkiForm()
+        public DangkiForm() 
         {
             InitializeComponent();
             this.btnCancel.Click += btnCancel_Click;

@@ -127,7 +127,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DangkiForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dangki";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
